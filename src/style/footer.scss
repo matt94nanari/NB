@@ -7,128 +7,17 @@
     border-width: 3px;
   }
 }
-@media (max-width: 1400px) {
-  .footer {
-    .information {
-      .email {
-        a {
-          p {
-            font-size: 0.875rem;
-          }
-        }
-      }
-      .navigation {
-        p {
-          font-size: 1.25rem;
-        }
-        ul {
-          li {
-            a {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-    .testimonial {
-      .title {
-        padding-left: 0;
-        font-size: 1.75rem;
-      }
-    }
-    .footer-pri {
-      p {
-        font-size: 1rem;
-      }
-    }
-    .footer-sec {
-      ul {
-        .nav-link {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 991px) {
   .footer {
-    .information {
-      .navigation {
-        margin-top: 20px;
+    .container {
+      > div {
+        justify-content: flex-start !important;
         ul {
+          padding-top: 0px;
+          padding-left: 0px;
           li {
-            a {
-              white-space: normal;
-            }
+            margin: 5px;
           }
-        }
-      }
-    }
-    .testimonial {
-      padding-left: 10px;
-      .title {
-        margin-top: 10px;
-      }
-      .button-list {
-        margin-top: 30px !important;
-        margin-left: 0 !important;
-        display: block !important;
-        li {
-          margin: 30px 0 !important;
-        }
-      }
-      .contact-info {
-        margin-top: 0;
-        margin-bottom: 30px;
-      }
-    }
-    .footer-pri {
-      margin-top: 0;
-      flex-direction: column;
-      a {
-        display: inline-block;
-      }
-      p {
-        font-size: 14px;
-        display: inline-block;
-      }
-    }
-    .footer-sec {
-      ul {
-        .privatePolicy,
-        .copyright {
-          font-size: 12px;
-        }
-        .copyright {
-          padding-top: 0.25rem;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 576px) {
-  .footer {
-    .information {
-      .email {
-        margin-top: 30px;
-        margin-left: 0;
-        a {
-          p {
-            font-size: 0.875em;
-          }
-        }
-      }
-      .navigation {
-        margin-top: 10px;
-      }
-    }
-    .testimonial {
-      .title {
-        font-size: 1.2rem;
-      }
-      .button-list {
-        a {
-          font-size: 0.875em;
         }
       }
     }
