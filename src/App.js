@@ -9,7 +9,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import ScrollToTop from './utils/ScrollToTop'
-import PrivacyButton from './components/PirvacyButton'
 //import pages
 import Home from './pages/Home'
 import PageNotFound from './pages/PageNotFound'
