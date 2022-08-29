@@ -16,6 +16,12 @@ function App() {
   const [showLoader, setShowLoader] = useState(true)
   const [hashID, setHashID] = useState('')
   useEffect(() => {
+    const refreshAOS = () => {
+      AOS.refresh()
+    }
+    window.addEventListener('scroll', refreshAOS)
+  }, [])
+  useEffect(() => {
     const handleAos = () => {
       AOS.init({
         duration: 500,
