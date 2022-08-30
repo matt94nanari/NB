@@ -11,14 +11,10 @@ function Footer(props) {
   return (
     <>
       <footer className="footer">
-        <hr />
         <Container>
+          <h2>联络资讯:</h2>
           <div className="d-flex flex-wrap justify-content-around">
-            <div className="col-lg-8 col-md-12">
-              <ImageLoader src={certification} />
-            </div>
-            <ul className="col-lg-4 col-md-12">
-              <li className="ps-4">联络资讯</li>
+            <ul className="col-lg-12 col-md-12">
               <li>
                 <BsTelephoneFill /> 86-574-87271432
               </li>

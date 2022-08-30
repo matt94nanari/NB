@@ -6,8 +6,8 @@ function Home(props) {
   return (
     <>
       <main>
-        <div className="col-lg-8 col-md-10 col-12 mt-5">
-          <ImageLoader src={home} />
+        <div className="d-flex justify-content-center home">
+          <ImageLoader src={home} className="col-lg-11 col-md-11 col-12" />
         </div>
         <h1 className="ps-5 mb-5">产品展示</h1>
         <div

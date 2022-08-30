@@ -1,11 +1,13 @@
 .header {
   position: relative;
   .navbar {
-    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    height: 100px;
-    background-color: #2e4c1b;
     justify-content: space-around;
     z-index: 999;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    height: 100px;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
     .navbar-brand {
       display: block;
       z-index: 10;
@@ -17,8 +19,8 @@
       }
     }
     .text {
-      background-color: white;
-      color: black;
+      // background-color: white;
+      color: white;
       padding: 5px;
       p {
         text-align: center;
@@ -26,10 +28,21 @@
       }
     }
   }
+  .navbar.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: #2e4c1b;
+    transition: background-color 1s,
+      opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
 }
 @media (max-width: 991px) {
   .header {
     .navbar {
+      justify-content: flex-start;
+      .navbar-brand {
+       padding-left: 10px;
+      }
       .text {
         display: none;
       }
