@@ -1,13 +1,13 @@
 import { withRouter } from 'react-router-dom'
 import ImageLoader from '../components/ImageLoader'
-import home from '../images/home.jpg'
+import home from '../images/home.png'
 
 function Home(props) {
   return (
     <>
       <main>
         <div className="d-flex justify-content-center home">
-          <ImageLoader src={home} className="col-lg-11 col-md-11 col-12" />
+          <ImageLoader src={home} className="col-lg-10 col-md-11 col-12" />
         </div>
         <h1 className="ps-5 mb-5">产品展示</h1>
         <div
